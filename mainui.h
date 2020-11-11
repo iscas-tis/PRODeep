@@ -18,6 +18,9 @@
 
 #define PYTHON_EXECUTABLE "/home/demo/miniconda3/bin/python"
 #define DEEPG_ROOT "/home/demo/Library/deepg"
+#define PLANET_DIR "/home/demo/Library/planet/casestudies/MNIST"
+#define Reluplex_ROOT "/home/demo/Library/reluplex/ReluplexCav2017-master"
+
 //#define DEEPG_ERAN_BACKEND "/home/demo/miniconda3/bin/python deepg.py"
 #define DEEPG_BACKEND "./build/deepg_constraints"
 #define DEEPG_ERAN_BACKEND (std::string(PYTHON_EXECUTABLE) + std::string(" deepg.py")).c_str()
@@ -26,11 +29,13 @@
 #define DEEPG_DIR (std::string(DEEPG_ROOT) + std::string("/code")).c_str()
 #define DEEPG_ERAN_DIR (std::string(DEEPG_ROOT) + std::string("/ERAN/tf_verify")).c_str()
 
-#define RELUPLEX_BACKEND "/home/demo/Library/reluplex/ReluplexCav2017-master/check_properties/adversarial/adversarialPure.elf"
-#define RELUPLEX_WITH_DEEPSYMBOL_BACKEND "/home/demo/Library/reluplex/ReluplexCav2017-master/check_properties/adversarial/adversarialBOXSym.elf"
+//#define RELUPLEX_BACKEND "/home/demo/Library/reluplex/ReluplexCav2017-master/check_properties/adversarial/adversarialPure.elf"
+#define RELUPLEX_BACKEND (std::string(Reluplex_ROOT)+std::string("/check_properties/adversarial/adversarialPure.elf")).c_str()
+//#define RELUPLEX_WITH_DEEPSYMBOL_BACKEND "/home/demo/Library/reluplex/ReluplexCav2017-master/check_properties/adversarial/adversarialBOXSym.elf"
+#define RELUPLEX_WITH_DEEPSYMBOL_BACKEND (std::string(Reluplex_ROOT)+std::string("/check_properties/adversarial/adversarialBOXSym.elf")).c_str()
 
-#define PLANET_BACKEND "python2 /home/demo/Library/planet/casestudies/MNIST/prodNetwork.py"
-#define PLANET_DIR "/home/demo/Library/planet/casestudies/MNIST"
+#define PLANET_BACKEND (std::string("python2 ")+std::string(PLANET_DIR)+std::string("/prodNetwork.py")).c_str()
+//#define PLANET_BACKEND "python2 /home/demo/Library/planet/casestudies/MNIST/prodNetwork.py"
 
 namespace Ui {
 class MainUI;
