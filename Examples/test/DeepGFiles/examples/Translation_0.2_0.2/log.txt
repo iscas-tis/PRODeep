@@ -1,0 +1,3 @@
+Avg poly runtime (s): 5.24178
+Avg box runtime (s): 49.7244
+Avg polyhedra distance: 0.00960875
