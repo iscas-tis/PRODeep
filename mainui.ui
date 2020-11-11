@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainUI</class>
+ <widget class="QMainWindow" name="MainUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PRODeep</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitterMain">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <layout class="QVBoxLayout" name="projectView"/>
+      </widget>
+      <widget class="QSplitter" name="splitterOut">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QSplitter" name="splitterResult">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <layout class="QHBoxLayout" name="setView"/>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <layout class="QHBoxLayout" name="resultView"/>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <layout class="QVBoxLayout" name="outView"/>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionImport_Network"/>
+    <addaction name="actionImport_Input"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Network"/>
+    <addaction name="actionSave_Input"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Set">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>&amp;Set</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Project">
+    <property name="title">
+     <string>&amp;Project</string>
+    </property>
+    <addaction name="action_New_Project"/>
+    <addaction name="action_Open_Project"/>
+    <addaction name="actionClose_Project"/>
+   </widget>
+   <widget class="QMenu" name="menu_Run">
+    <property name="title">
+     <string>&amp;Run</string>
+    </property>
+    <addaction name="actionRun"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tool">
+    <property name="title">
+     <string>&amp;Tool</string>
+    </property>
+    <addaction name="actionAdd_Tool"/>
+    <addaction name="actionRemove_Tool"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Set"/>
+   <addaction name="menu_Project"/>
+   <addaction name="menu_Run"/>
+   <addaction name="menu_Tool"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_New_Project">
+   <property name="text">
+    <string>&amp;New Project</string>
+   </property>
+  </action>
+  <action name="action_Open_Project">
+   <property name="text">
+    <string>&amp;Open Project</string>
+   </property>
+  </action>
+  <action name="actionClose_Project">
+   <property name="text">
+    <string>Close Project</string>
+   </property>
+  </action>
+  <action name="actionImport_Network">
+   <property name="text">
+    <string>Import Network</string>
+   </property>
+  </action>
+  <action name="actionImport_Input">
+   <property name="text">
+    <string>Import Input</string>
+   </property>
+  </action>
+  <action name="actionSave_Network">
+   <property name="text">
+    <string>Save Network</string>
+   </property>
+  </action>
+  <action name="actionSave_Input">
+   <property name="text">
+    <string>Save Input</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="text">
+    <string>Run</string>
+   </property>
+  </action>
+  <action name="actionAdd_Tool">
+   <property name="text">
+    <string>Add Tool....</string>
+   </property>
+  </action>
+  <action name="actionRemove_Tool">
+   <property name="text">
+    <string>Remove Tool...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

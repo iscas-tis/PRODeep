@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new/pic">
+        <file>resources/fielType.jpg</file>
+        <file>resources/newmodel.png</file>
+        <file>resources/newformule.png</file>
+        <file>resources/openmodel.png</file>
+        <file>resources/openformule.png</file>
+        <file>resources/run.png</file>
+        <file>resources/icon.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>resources/loading.gif</file>
+    </qresource>
+</RCC>
