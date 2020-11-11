@@ -10,6 +10,7 @@ PRODeep: A Platform for Robustness Verification of Deep Neural Networks
 	   	./configure -no-ppl -no-java
        	sudo make 
        	sudo make install
+	sudo ldconfig
 
 ## Compile PRODeep
 	1) cd \path\to\PRODeep
