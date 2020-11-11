@@ -1,1 +1,2 @@
 /home/deepui/test2/caffeprototxt_AI2_MNIST_FNN_1_testNetworkB.rlv,	/home/deepui/test2/0.in,	0.0100001,	PLANET,	BOX,	NUM_D,	Abst_symV,	00:00:02.363800,	2363,	2020-Nov-10 18:44:33.937301,	60,	58,	0
+/home/prodeep/PRODeep/Examples/test/caffeprototxt_AI2_MNIST_FNN_1_testNetworkB.rlv,	/home/prodeep/PRODeep/Examples/test/0.in,	0.0100001,	PLANET,	BOX,	NUM_D,	Abst_symV,	00:00:04.341889,	4341,	2020-Nov-11 17:20:16.823691,	60,	58,	0
