@@ -16,8 +16,11 @@
 
 #define JSON_RESULT_FILE "VerifyResult.json"
 #define DEEPG_BACKEND "./build/deepg_constraints"
-#define DEEPG_ERAN_BACKEND "/home/demo/miniconda3/bin/python deepg.py"
-#define ERAN_BACKEND "/home/demo/miniconda3/bin/python . "
+//#define DEEPG_ERAN_BACKEND "/home/demo/miniconda3/bin/python deepg.py"
+#define PYTHON_EXECUTABLE "/home/demo/miniconda3/bin/python"
+#define DEEPG_ERAN_BACKEND (std::string(PYTHON_EXECUTABLE) + std::string(" deepg.py")).c_str()
+#define ERAN_BACKEND (std::string(PYTHON_EXECUTABLE) + std::string(" . ")).c_str()
+//#define ERAN_BACKEND "/home/demo/miniconda3/bin/python . "
 #define DEEPG_DIR "/home/demo/Library/deepg/code"
 #define DEEPG_ERAN_DIR "/home/demo/Library/deepg/ERAN/tf_verify"
 #define RELUPLEX_BACKEND "/home/demo/Library/reluplex/ReluplexCav2017-master/check_properties/adversarial/adversarialPure.elf"
